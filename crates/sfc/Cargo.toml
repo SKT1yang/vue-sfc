@@ -1,0 +1,23 @@
+[package]
+authors = [
+  "杨国栋 <854252262@qq.com>",
+]
+description = "vue sfc apis for rust"
+# documentation = "https://rustdoc.swc.rs/sfc/"
+edition = "2021"
+name = "sfc"
+repository = "https://github.com/swc-project/swc.git"
+version = "0.17.0"
+
+  [package.metadata.docs.rs]
+  all-features = true
+  rustdoc-args = ["--cfg", "docsrs"]
+
+[lib]
+bench = false
+
+[dependencies]
+sfc_ast     = { version = "0.16.0", path = "../sfc_ast" }
+sfc_codegen = { version = "0.17.0", path = "../sfc_codegen" }
+sfc_parser  = { version = "0.17.0", path = "../sfc_parser" }
+sfc_visit   = { version = "0.16.0", path = "../sfc_visit" }
