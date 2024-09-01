@@ -1,0 +1,9 @@
+[package]
+authors = ["杨国栋 <854252262@qq.com>"]
+description = "AST definitions of vue sfc"
+edition = "2021"
+name = "sfc_ast"
+version = "0.1.0"
+
+[lib]
+bench = false
